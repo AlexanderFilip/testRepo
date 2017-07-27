@@ -9,10 +9,10 @@ import java.util.List;
 import java.util.Random;
 
 public class SearchResultsListPage extends PageObject {
-    
+
     @FindBy(css="[class~=emg-pagination-no]")
     public List<WebElement> pagesBigResolution;
-    
+
     @FindBy(css="li.active > span")
     public List<WebElement> pagesSmallResolution;
 
@@ -56,9 +56,9 @@ public class SearchResultsListPage extends PageObject {
                 }
             }
 
-            getDriver().get("https://www.emag.ro/search/" + keyword + "/p" + pageNr);
-            //System.out.println("Done");
-        } 
+            getDriver().get("https://www.qa3.madison.com/catalogsearch/result/" + keyword + "/p" + pageNr);
+            System.out.println("Done");
+        }
     }
 
     public void clickOnRandomProduct() {

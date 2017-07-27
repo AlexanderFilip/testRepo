@@ -1,13 +1,13 @@
 package com.madison.tests;
 
+import com.madison.steps.UpdateShoppingCart;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
-
+import com.madison.pages.*;
 /**
  * Created by alexandrufilip on 7/27/2017.
  */
 
-import com.emag.steps.AddProductToCartSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -23,27 +23,18 @@ import org.openqa.selenium.WebDriver;
         private WebDriver driver;
 
         @Steps
-        private AddProductToCartSteps addProductToCartSteps;
-
-
+        private UpdateShoppingCart updateShopCartSteps;
 
     @Test
-    public void emagSearchTest() {
+    public void madisonCartTest() {
 
-        addProductToCartSteps.navigateToHomePage();
-        addProductToCartSteps.searchTermAndNavigateToRandomSearchPage("CHELSEA TEE");
-        addProductToCartSteps.clickOnRandomProduct();
-        addProductToCartSteps.getProductTitleAndClickOnAddToCartButton();
-        addProductToCartSteps.clickOnShowCartDetails();
-        addProductToCartSteps.checkByTitleIfProductWasAddedInCart();
+        updateShopCartSteps.navigateToHomePage();
+        updateShopCartSteps.navigateToCartPage();
+      //  updateShopCartSteps.goToCart();
+      //  updateShopCartSteps.changeQuantity();
+     //   updateShopCartSteps.clickUpdateButton();
+
+
     }
-
-
-
-
-
-
-
-
 
 }

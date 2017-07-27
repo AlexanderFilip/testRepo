@@ -20,12 +20,12 @@
 //
 //    @Test
 //    public void emagSearchTest() {
-//        addProductToCartSteps.navigateToHomePage();
-//        addProductToCartSteps.searchTermAndNavigateToRandomSearchPage("iphone 7");
-//        addProductToCartSteps.clickOnRandomProduct();
-//        addProductToCartSteps.getProductTitleAndClickOnAddToCartButton();
-//        addProductToCartSteps.clickOnShowCartDetails();
-//        addProductToCartSteps.checkByTitleIfProductWasAddedInCart();
+////        addProductToCartSteps.navigateToHomePage();
+////        addProductToCartSteps.searchTermAndNavigateToRandomSearchPage("iphone 7");
+////        addProductToCartSteps.clickOnRandomProduct();
+////        addProductToCartSteps.getProductTitleAndClickOnAddToCartButton();
+////        addProductToCartSteps.clickOnShowCartDetails();
+////        addProductToCartSteps.checkByTitleIfProductWasAddedInCart();
 //    }
 //
 //}
